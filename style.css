@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Main CSS stylesheet for jlib.be (http://jlib.be)
+Copywright (c) Jonathan Libby 2012
+*/
+
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+	
+}
+
+a {
+	color:#09F;	
+	text-decoration:none;
+}
+
+a:hover {
+	color:#06F;	
+}
+
+
+#header {
+	color:#09F;
+	width:550px;
+	hieght:150px;
+	margin:0 auto;
+
+}
+
+#header h1 {
+	font-size:500%;
+	text-align:center;	
+}
+
+
+
+
+
+.error{
+	color:#FF0000;
+
+}
+
+.success {
+	color:#0C0;	
+}
+
+#url {
+	padding:5px;
+	border:1px solid #999;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+}
+
+#url:focus {
+	border:1px solid #09F;	
+}
+
+
+/*Class for the shorten button*/
+
+.shortenButton {
+	-moz-box-shadow: 0px 1px 0px 0px #cae3fc;
+	-webkit-box-shadow: 0px 1px 0px 0px #cae3fc;
+	box-shadow: 0px 1px 0px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 59px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #287ace;
+	cursor:pointer;
+	/*position:relative;
+	top:80px;
+	right:320px;*/
+}
+.shortenButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+	color:#fff;
+}
+.shortenButton:active {
+	position:relative;
+	top:1px;
+}
+
+.aboutbutton {
+	-moz-box-shadow: 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: 0px 1px 0px 0px #ffffff;
+	box-shadow: 0px 1px 0px 0px #ffffff;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:normal;
+	padding:3px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.aboutbutton:hover {
+	background-color:#dfdfdf;
+	color:#777777;
+	cursor:pointer;
+}.aboutbutton:active {
+	position:relative;
+	top:1px;
+}
+
+.contactbutton {
+	-moz-box-shadow: 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: 0px 1px 0px 0px #ffffff;
+	box-shadow: 0px 1px 0px 0px #ffffff;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:normal;
+	padding:3px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.contactbutton:hover {
+	background-color:#dfdfdf;
+	color:#777777;
+	cursor:pointer;
+}.contactbutton:active {
+	position:relative;
+	top:1px;
+}
+
+#about {
+	text-align:center;
+}
