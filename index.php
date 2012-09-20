@@ -8,7 +8,7 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 	}
 	click($c);
 	redirect($c);
-	die();
+	die(); // kill the script in case people have header() redirects turned off in their browser
 }
 ?>
 <!DOCTYPE html>
@@ -19,13 +19,12 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 
 <title>The lib.be link shortener</title>
 <link type="text/css" rel="stylesheet" href="style.css" />
-<!-- desktop -->
+<!-- Desktop -->
 <link type="text/css" rel="stylesheet" media="screen and (min-width:900px)" href="desktop.css" />
-<!-- mobile -->
+<!-- Mobile -->
 <link type="text/css" rel="stylesheet" media="screen and (min-width:0px) and (max-width:400px)" href="mobile.css" />
-
+<!-- Tablet -->
 <link type="text/css" rel="stylesheet" media="screen and (min-width:401px) and (max-width:899px)" href="tablet.css" />
-
 
 <!--Open Graph protocol stuff-->
 
@@ -55,9 +54,6 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 <input type="text" name="url" id="url" onkeydown="if (event.keycode == 13 || event.which == 13) { go($('#url').val()); }" /> 
 <a class="shortenButton" onclick="go($('#url').val());">Shorten!</a>
 </div>
-
-
-
 
 </div> <!--end of the content-->
 

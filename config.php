@@ -7,15 +7,14 @@
 */
 
 
-// DATA SERVER / DATABASE CONFIG
+// DATA SERVER CONNECTION & DATABASE CONFIG
 
-	$db_host = "127.0.0.1";
-	$db_user = "user";
-	$db_pass = "password";
-	$db_name = "database";
+	$db_host = "127.0.0.1"; // Defines the host of your data server
+	$db_user = "user"; // Defines the user to be used for the connection to the data server
+	$db_pass = "password"; // Defines the password to be used with the user defined above
+	$db_name = "database"; // Defines the name of the database to be used. *IMPORTANT - the user defined above must have read & write permissions to this database*
 
 // SITE CONFIG
-	
 	
 	$url_base = 'lib.be'; // INCLUDE the "http://"
 	$short_character_set = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
