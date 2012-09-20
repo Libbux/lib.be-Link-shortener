@@ -4,13 +4,13 @@ function clean($data) {
 return mysql_real_escape_string($data);
 }
 
-function is_jlib($url) {
-	return (preg_match("/jlib\.be/i", $url)) ? true : false;
+function is_short($url) {
+	return (preg_match($base_url, $url)) ? true : false; // "/jlib\.be/i"
 }
 
 function gen_code() {
-	$charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";	//set of characters to gen the code from
-	return substr(str_shuffle($charset), 0, 6);
+	$charset = $short_character_set;	//set of characters to gen the code from
+	return substr(str_shuffle($charset), 0, $short_length);
 	
 }
 

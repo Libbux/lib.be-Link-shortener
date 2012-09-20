@@ -1,11 +1,6 @@
 <?php
 
-//Mysql db stuff
-
-$db_host = "127.0.0.1";
-$db_user = "root";
-$db_pass = "";
-$db_name = "jlibbe";
+include('config.php');
 
 mysql_connect($db_host, $db_user, $db_pass) or die("Could not connect - " . mysql_error);
 mysql_select_db($db_name);

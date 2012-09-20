@@ -15,7 +15,9 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 <html>
 <head>
 
-<title>jlib.be - Short is simple</title>
+<!-- This is a sample page to demonstrate the lib.be shortening engine (with AJAX) -->
+
+<title>The lib.be link shortener</title>
 <link type="text/css" rel="stylesheet" href="style.css" />
 <!-- desktop -->
 <link type="text/css" rel="stylesheet" media="screen and (min-width:900px)" href="desktop.css" />
@@ -28,10 +30,10 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 <!--Open Graph protocol stuff-->
 
 <meta property="og:type"			content="website">
-<meta property="og:title" 			content="Jlib.be - Short is simple">
-<meta property="og:description"		content="Short is simple. Jlib.be simplifies links.">
+<meta property="og:title" 			content="<?php echo $site_name; ?>">
+<meta property="og:description"		content="My link shortener">
 <meta property="og:url"				content="http://jlib.be">
-<meta property="og:image"			content="imgs/jlibbe.png">
+<meta property="og:image"			content="imgs/image.png">
 <meta property="og:image:width"		content="180">
 <meta property="og:image:height"	content="180">
 <meta property="og:locale"			content="en_US">
@@ -41,14 +43,14 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 <div id="wrapper">
 
 <div id="header">
-<a href=""><h1>jlib.be</h1>
-<p id="header-p">Short is simple.</p></a>
+<a href=""><h1>lib.be</h1>
+<p id="header-p">Short. Simple. Smart.</p></a>
 </div>
 
 <div id="content">
 
 <div id="shorten">
-<div id="message"><p class="">Enter a long URL, and we'll shorten it for you.</p></div>
+<div id="message"><p class="">Enter a URL to be shortened.</p></div>
 
 <input type="text" name="url" id="url" onkeydown="if (event.keycode == 13 || event.which == 13) { go($('#url').val()); }" /> 
 <a class="shortenButton" onclick="go($('#url').val());">Shorten!</a>
@@ -63,15 +65,12 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 <p>Handmade in Toronto by Jonathan Libby</p>
 <div id="buttons">
 <a class="aboutbutton">About</a>
-<a class="contactbutton" href="mailto:jonathan.libby@yahoo.ca?subject=jlib.be%20user%20feedback">Contact</a>
+<a class="contactbutton" href="mailto:<?php echo $contact_email; ?>?subject=<?php echo $contact_subject; ?>">Contact</a>
 </div>
 </div>
 
 <div id="about">
-<p><strong>(c) Jonathan Libby, 2012</strong><br>
-Jlib.be is a link shortening service provided by Jonathan Libby. By submitting a URL to Jlib.be, you agree to have your link
-recorded by Jlib.be for purposes including and other than the shortening/redirection service provided. For questions or to contact, click the 'Contact' button
-above.</p>
+<p><?php echo $about_info; ?></p>
 </div>
 
 
