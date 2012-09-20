@@ -48,6 +48,4 @@ function click($code) {
 	$sql = "UPDATE `urls` SET `clicks` = '{$tot_clicks}' WHERE `code` = '{$code}'";
 	mysql_query($sql);
 }
-
-
 ?>

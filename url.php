@@ -6,8 +6,6 @@ if(isset($_POST['url'])) {
 	
 	$url = trim($_POST['url']);
 	
-	
-	
 	if(empty($url)) {
 		echo 'error_no_url';
 	} else if (filter_var($url, FILTER_VALIDATE_URL) === false) {
@@ -23,8 +21,4 @@ if(isset($_POST['url'])) {
 	}
 	
 }
-
-
-
-
 ?>
