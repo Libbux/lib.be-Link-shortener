@@ -9,8 +9,8 @@ $('#url').focus(); // makes the cursor go straight to the input field, for speed
 $(document).ready(function(){
 $('.aboutbutton').click(function(){
 	$('#about').slideToggle("400"); // .slideToggle() is used, although kind of useless, as .slideDown() could also be used
-});
-});
+}); // close the 'click' event handler block
+}); // close the 'document.ready' event handler block
 
 
 function go(url) {

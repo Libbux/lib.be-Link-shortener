@@ -1,4 +1,4 @@
-<?php
+<?php			
 include_once('init.php');
 
 if (isset($_GET['c']) && !empty($_GET['c'])) {

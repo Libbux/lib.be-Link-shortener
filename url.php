@@ -13,6 +13,7 @@ if(isset($_POST['url'])) {
 	} else if (is_short($url) === true) {
 		echo 'error_is_short';
 	} else {
+//	Could probably make this stuff slightly more secure
 		while (!code_exists($code = gen_code())) {
 		shorten($url, $code);
 		echo $url_base . $code;
