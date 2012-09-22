@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php			
+=======
+<?php 
+>>>>>>> 0a7d3672578ee35f1433004b5d3e07e2c76dfc75
 include_once('init.php');
 
 if (isset($_GET['c']) && !empty($_GET['c'])) {
