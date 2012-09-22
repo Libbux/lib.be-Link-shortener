@@ -4,7 +4,10 @@ include_once('init.php');
 
 if(isset($_POST['url'])) {
 	
+	// This recursive section is only to be TRIPLE sure that there is no SQL Injection or XSS
 	$url = trim($_POST['url']);
+	$url = htmlentities($url);
+	$url = mysql_real_escape_string($url);
 	
 	if(empty($url)) {
 		echo 'error_no_url';

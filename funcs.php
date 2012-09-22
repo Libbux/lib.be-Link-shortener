@@ -1,11 +1,11 @@
 <?php
 
 function clean($data) {
-return mysql_real_escape_string($data);
+return htmlentities(mysql_real_escape_string($data));
 }
 
 function is_short($url) {
-	return (preg_match($base_url, $url)) ? true : false; // "/jlib\.be/i"
+	return (preg_match($url_base, $url)) ? true : false; // "/jlib\.be/i"
 }
 
 function gen_code() {
