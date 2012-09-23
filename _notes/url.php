@@ -13,13 +13,19 @@ if(isset($_POST['url'])) {
 		echo 'error_no_url';
 	} else if (filter_var($url, FILTER_VALIDATE_URL) === false) {
 		echo 'error_invalid_url';
-	} else if (is_short($url) === true) {
+	} else if (is_short($url, $base_url) === true) {
 		echo 'error_is_short';
 	} else {
 //	Could probably make this stuff slightly more secure
-		while (!code_exists($code = gen_code())) {
+		while (!code_exists($code = gen_code($short_charset, $short_length))) {
 		shorten($url, $code);
-		echo $base_url . $code;
+		
+		if($show_protocol == true) {
+		echo 'http://' . $base_url . '/' . $code;
+		}
+		if($show_protocol == false) {
+		echo $base_url . '/' . $code;
+		}
 		break 1;
 		}
 	}

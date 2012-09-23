@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Main CSS stylesheet for jlib.be (http://jlib.be)
+Copywright (c) Jonathan Libby 2012
+*/
+
+#wrapper {
+	position:relative;
+	width:960px;
+	height:100%;
+	margin:0 auto;
+	padding:20px; 
+}
+
+#header {
+	position:absolute;
+	left:250px;
+	color:#09F;
+	width:550px;
+	hieght:150px;
+}
+
+#header:active {
+	position:absolute;
+	top:21px;	
+}
+
+#header h1 {
+	font-size:500%;
+	text-align:center;	
+}
+
+#header p {
+	position:absolute;
+	font-size:120%;
+	top:125px;
+	left:180px;
+}
+
+
+#shorten {
+	position:absolute;
+	top:270px;
+	left:250px;
+	padding-left:45px;
+	width:505px;
+	height:150px;
+}
+
+#shorten p {
+	position:relative;
+	left:55px;	
+}
+
+.error{
+	color:#FF0000;
+	text-align:left;
+	padding-left:80px;
+}
+
+.success {
+	color:#0C0;	
+	text-align:left;
+	padding-left:80px;
+}
+
+#url {
+	width:450px;	
+}
+
+#footer {
+	position:absolute;
+	top:500px;
+	left:290px;
+	width:470px;
+	height:50px;
+}
+
+#footer p {
+	font-size:80%;
+	color:#666;	
+	text-align:center;
+	line-height:30px;
+}
+
+#buttons {
+	position:relative;
+	left:140px;	
+}
+
+/*Class for the shorten button*/
+
+.shortenButton {
+	position:relative;
+	top:20px;
+	left:130px;
+}
+
+.shortenButton:active {
+	position:relative;
+	top:21px;
+}
+
+#about {
+	position:absolute;
+	width:500px;
+	height:150px;
+	top:380px;
+	left:-5px;
+	margin:250px;
+	padding:25px;
+	border:1px dashed #777777;
+	border-radius:15px;
+	font-size:95%;
+	color:#777777;
+}
