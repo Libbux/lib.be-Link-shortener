@@ -1,15 +1,19 @@
 <?php
 include_once('init.php');
-
 function clean($data) {
-return htmlentities(mysql_real_escape_string($data));
+return mysql_real_escape_string($data);
 }
 
-function is_short($url) {
-	return (preg_match($base_url, $url)) ? true : false; // "/jlib\.be/i"
+function is_short($url, $base_url) {
+// Make the base URL work with the preg_match function
+	$base_url = explode( '.', $base_url);
+	$base_url_1 = "/" . $base_url[0];
+	$base_url_2 = "\.$base_url[1]/i";
+	$base_url = $base_url_1 . $base_url_2;
+	return (preg_match(trim($base_url), $url)) ? true : false; // "/jlib\.be/i"
 }
 
-function gen_code() {
+function gen_code($short_charset, $short_length) {
 	$charset = $short_charset;	//set of characters to gen the code from
 	return substr(str_shuffle($charset), 0, $short_length);
 	
