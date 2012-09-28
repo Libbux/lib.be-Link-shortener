@@ -21,10 +21,10 @@ include_once('init.php');
 	$short_charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; // The set of letters & numbers from which the code will be generated
 	$short_length = 6; // Defines how long the code on the end of the shortened URL is
 	
-	$site_name = 'lib.be';
-	$site_descrip = 'Lib.be is a link shortening service. Come shorten your links!';
-	$about_info = 'Lib.be is an open source shortening engine, developed by Jonathan Libby';
+	$site_name = 'lib.be'; // The name of this site, to be used with Open Graph Protocol (http://ogp.me)
+	$site_descrip = 'Lib.be is a link shortening service. Come shorten your links!'; // A short site description, to be used with OGP (http://ogp.me)
+	$about_info = 'Lib.be is an open source shortening engine, developed by Jonathan Libby'; // The info to be displayed in the 'about' area
 	
-	$contact_email = 'example@example.com';
-	$contact_subject = 'Contact%20form';
+	$contact_email = 'example@example.com'; // The email adress which "contact us" emails will be sent to
+	$contact_subject = 'Contact%20form'; // The subject of "contact us" emails
 ?>

@@ -5,7 +5,7 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 	$c = $_GET['c'];	//the code in the url
 	if(!code_exists($c)) {
 	header("location: /");
-	}
+}
 	click($c);
 	redirect($c);
 	die(); // kill the script in case people have header() redirects turned off in their browser

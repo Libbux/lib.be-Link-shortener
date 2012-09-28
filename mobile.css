@@ -1,5 +1,9 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document
+*  Main CSS document for the demo of the
+*  lib.be URL shortener
+*  © Jonathan Libby 2012
+*/
 
 #wrapper {
 	position:relative;
