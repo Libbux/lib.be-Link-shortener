@@ -11,7 +11,7 @@ include_once('init.php');
 
 	$db_host = "localhost"; // Defines the host of your data server
 	$db_user = "root"; // Defines the user to be used for the connection to the data server
-	$db_pass = ""; // Defines the password to be used with the user defined above
+	$db_pass = "pass"; // Defines the password to be used with the user defined above
 	$db_name = "jlibbe"; // Defines the name of the database to be used. *IMPORTANT - the user defined above must have read & write permissions to this database*
 
 // SITE CONFIG
