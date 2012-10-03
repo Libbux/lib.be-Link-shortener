@@ -5,7 +5,7 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 	$c = $_GET['c'];	//the code in the url
 	if(!code_exists($c)) {
 	header("location: /");
-}
+	}
 	click($c);
 	redirect($c);
 	die(); // kill the script in case people have header() redirects turned off in their browser
@@ -42,8 +42,8 @@ if (isset($_GET['c']) && !empty($_GET['c'])) {
 <div id="wrapper">
 
 <div id="header">
-<a href=""><h1>lib.be</h1>
-<p id="header-p">Short. Simple. Smart.</p></a>
+<a href=""><h1><?php echo $site_name; ?></h1>
+<p id="header-p"><?php echo $site_motto; ?></p></a>
 </div>
 
 <div id="content">
