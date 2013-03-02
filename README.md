@@ -10,12 +10,12 @@ The quick and dirty installation of the lib.be engine will get you up and runnin
 #### Step 1 (Database configuration):
 1. Open ``config.php`` in your favorite text editor. Give it a quick skim - it's heavily commented, you might even be able to figure it out yourself.
 2. Locate the lines in ``config.php`` that begin like this:
-```
-12  $db_host = "localhost";
-13	$db_user = "libbe";
-14	$db_pass = "super_secret_password";
-15	$db_name = "my_url_shortener";
-```
+
+	12  	$db_host = "localhost";
+	13	$db_user = "libbe";
+	14	$db_pass = "super_secret_password";
+	15	$db_name = "my_url_shortener";
+
 These are the most important values - if they're not configured correctly, the engine will not work! The first one we need to change is ``$db_host``. As the comments in ``config.php`` explain, this variable sets the hostname (or IP, either will work) of the database server on which the database the engine stores its data in resides. If you have paid for web hosting with a MySQL server, your account will probably give you an IP. Copy and paste that IP into the file, inside the quoations in front of ``$db_host`` on line 12 of ``config.php``. The above section of code should now look like this (let's assume my database server IP is 12.34.567.890):
 ```
 12	$db_host = "12.34.567.890";
