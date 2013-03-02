@@ -1,11 +1,3 @@
-## About
-The lib.be link shortener is an scalable, reliable PHP link shortener. A pre-built front end page is provided to demonstrate what can be done when combining the lib.be link shortener with AJAX.
-
-## Installation
-There are two ways in which the lib.be link shortener can be installed and configured. There is the Quick-And-Dirty method, and the Full-Installation method.
-### Quick and dirty
-Give me a sec, I'm updating this section...
-=======
 The lib.be link shortener is a scalabe & reliable URL shortening engine. It comes with a pre-built front-end page (``index.php``), to demonstrate interaction with the engine, and what can be done with a little AJAX. Feel free to use this page with your own projects.
 
 ## Installation
