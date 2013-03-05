@@ -79,7 +79,8 @@ This documentation is coming soon!
 * [Jonathan Libby] (http://www.thelibbster.com) (http://github.com/TheLibbster)
 
 ## License
-Copyright © 2012-2013 Jonathan Libby
+Copyright © 2012-2013 Jonathan Libby.
+
 A copy of the AGPL v3 is included with this work (``gpl.txt``).
 
 ```
