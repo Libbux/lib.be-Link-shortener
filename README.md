@@ -80,7 +80,7 @@ This documentation is coming soon!
 
 ## License
 Copyright © 2012-2013 Jonathan Libby
-A copy of the GPLv3 is included with this work (``gpl.txt``).
+A copy of the AGPL v3 is included with this work (``gpl.txt``).
 
 ```
 	The lib.be-Link-shortener is free software: you can redistribute it and/or modify
